@@ -1,0 +1,524 @@
+2022-05-25 11:56:43.884  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : Starting EAuctionBuyerApplication using Java 11.0.12 on JrJavaFseCogn-6 with PID 16452 (C:\Users\User\Project-workspace\auction-buyer-microservice\target\classes started by User in C:\Users\User\Project-workspace\auction-buyer-microservice)
+2022-05-25 11:56:43.897  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-25 11:56:43.991  INFO 16452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-25 11:56:43.993  INFO 16452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-25 11:56:44.926  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-25 11:56:44.927  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-25 11:56:44.985  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 MongoDB repository interfaces.
+2022-05-25 11:56:45.695  INFO 16452 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47b91e62-f4cb-3544-8816-d5d093cb041b
+2022-05-25 11:56:46.529  INFO 16452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-05-25 11:56:46.538  INFO 16452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 11:56:46.539  INFO 16452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-25 11:56:46.753  INFO 16452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 11:56:46.754  INFO 16452 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2759 ms
+2022-05-25 11:56:47.075  INFO 16452 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-25 11:56:47.137  INFO 16452 --- [cluster-ClusterId{value='628dcc27856e151e7691f3e0', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:33}] to localhost:27017
+2022-05-25 11:56:47.138  INFO 16452 --- [cluster-rtt-ClusterId{value='628dcc27856e151e7691f3e0', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:34}] to localhost:27017
+2022-05-25 11:56:47.141  INFO 16452 --- [cluster-ClusterId{value='628dcc27856e151e7691f3e0', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=16757500}
+2022-05-25 11:56:47.225  WARN 16452 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-25 11:56:47.252  WARN 16452 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-25 11:56:47.455  WARN 16452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-05-25 11:56:48.473  INFO 16452 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-05-25 11:56:48.490  INFO 16452 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@681e1782, org.springframework.security.web.context.SecurityContextPersistenceFilter@275b05f3, org.springframework.security.web.header.HeaderWriterFilter@4f7873fa, org.springframework.web.filter.CorsFilter@75874aa5, org.springframework.security.web.csrf.CsrfFilter@487b2592, org.springframework.security.web.authentication.logout.LogoutFilter@648f3c24, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35823fe0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6c543239, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@73a108b3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@37c63cca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b4a91a4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@127524a5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28b2a8c3, org.springframework.security.web.session.SessionManagementFilter@4bad2947, org.springframework.security.web.access.ExceptionTranslationFilter@23b7246f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61b87102]
+2022-05-25 11:56:48.820  INFO 16452 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 11:56:48.820  INFO 16452 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-25 11:56:48.822  INFO 16452 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-25 11:56:49.011  INFO 16452 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-05-25 11:56:49.122  WARN 16452 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-25 11:56:49.261  INFO 16452 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-05-25 11:56:49.306  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-05-25 11:56:49.464  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-05-25 11:56:49.464  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-05-25 11:56:49.748  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-05-25 11:56:49.749  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-05-25 11:56:49.960  INFO 16452 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 11:56:49.977  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-05-25 11:56:49.978  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-05-25 11:56:49.978  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-05-25 11:56:49.982  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-05-25 11:56:49.982  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-05-25 11:56:49.982  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-05-25 11:56:49.982  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-05-25 11:56:50.137  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-05-25 11:56:50.142  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-05-25 11:56:50.145  INFO 16452 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-25 11:56:50.149  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1653460010147 with initial instances count: 1
+2022-05-25 11:56:50.151  INFO 16452 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUCTION-BUYER-MICROSERVICE with eureka with status UP
+2022-05-25 11:56:50.152  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1653460010152, current=UP, previous=STARTING]
+2022-05-25 11:56:50.155  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082: registering service...
+2022-05-25 11:56:50.186  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - registration status: 204
+2022-05-25 11:56:50.195  INFO 16452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-05-25 11:56:50.196  INFO 16452 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2022-05-25 11:56:50.313  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : Started EAuctionBuyerApplication in 7.138 seconds (JVM running for 8.327)
+2022-05-25 12:01:49.992  INFO 16452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:06:50.006  INFO 16452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:11:50.012  INFO 16452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:16:50.027  INFO 16452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:21:50.043  INFO 16452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:25:00.871  INFO 16452 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUCTION-BUYER-MICROSERVICE with eureka with status DOWN
+2022-05-25 12:25:00.872  INFO 16452 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1653461700872, current=DOWN, previous=UP]
+2022-05-25 12:25:00.873  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082: registering service...
+2022-05-25 12:25:00.886  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - registration status: 204
+2022-05-25 12:25:00.970  INFO 16452 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-05-25 12:25:03.992  INFO 16452 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-05-25 12:25:04.002  INFO 16452 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - deregister  status: 200
+2022-05-25 12:25:04.016  INFO 16452 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-05-25 12:25:04.373  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : Starting EAuctionBuyerApplication using Java 11.0.12 on JrJavaFseCogn-6 with PID 16452 (C:\Users\User\Project-workspace\auction-buyer-microservice\target\classes started by User in C:\Users\User\Project-workspace\auction-buyer-microservice)
+2022-05-25 12:25:04.373  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-25 12:25:04.945  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-25 12:25:04.946  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-25 12:25:04.955  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 MongoDB repository interfaces.
+2022-05-25 12:25:05.248  INFO 16452 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47b91e62-f4cb-3544-8816-d5d093cb041b
+2022-05-25 12:25:05.363  INFO 16452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-05-25 12:25:05.364  INFO 16452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 12:25:05.365  INFO 16452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-25 12:25:05.392  INFO 16452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 12:25:05.392  INFO 16452 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1016 ms
+2022-05-25 12:25:05.466  INFO 16452 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-25 12:25:05.471  WARN 16452 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-25 12:25:05.485  WARN 16452 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-25 12:25:05.488  INFO 16452 --- [cluster-rtt-ClusterId{value='628dd2c9856e151e7691f3e1', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:53}] to localhost:27017
+2022-05-25 12:25:05.490  INFO 16452 --- [cluster-ClusterId{value='628dd2c9856e151e7691f3e1', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:54}] to localhost:27017
+2022-05-25 12:25:05.493  INFO 16452 --- [cluster-ClusterId{value='628dd2c9856e151e7691f3e1', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10311400}
+2022-05-25 12:25:05.522  WARN 16452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-05-25 12:25:05.917  INFO 16452 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-05-25 12:25:05.927  INFO 16452 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2b1b74ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@415c2e0b, org.springframework.security.web.header.HeaderWriterFilter@41dcd3ab, org.springframework.web.filter.CorsFilter@56be5ba9, org.springframework.security.web.csrf.CsrfFilter@55a50e87, org.springframework.security.web.authentication.logout.LogoutFilter@2eacf0b5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@321f518d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@e9fcea0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1ee5ebca, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5b6e223b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13427fb6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34a4b7fe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34b06dd7, org.springframework.security.web.session.SessionManagementFilter@3cf0ce24, org.springframework.security.web.access.ExceptionTranslationFilter@52200d83, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1572c7a1]
+2022-05-25 12:25:06.044  INFO 16452 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-05-25 12:25:06.068  WARN 16452 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-25 12:25:06.104  INFO 16452 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-05-25 12:25:06.105  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-05-25 12:25:06.111  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-05-25 12:25:06.111  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-05-25 12:25:06.111  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-05-25 12:25:06.111  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-05-25 12:25:06.169  INFO 16452 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:25:06.171  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-05-25 12:25:06.171  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-05-25 12:25:06.171  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-05-25 12:25:06.172  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-05-25 12:25:06.172  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-05-25 12:25:06.172  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-05-25 12:25:06.172  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-05-25 12:25:06.176  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-05-25 12:25:06.177  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-05-25 12:25:06.177  INFO 16452 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-25 12:25:06.178  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1653461706178 with initial instances count: 2
+2022-05-25 12:25:06.180  INFO 16452 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUCTION-BUYER-MICROSERVICE with eureka with status UP
+2022-05-25 12:25:06.180  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1653461706180, current=UP, previous=STARTING]
+2022-05-25 12:25:06.182  INFO 16452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-05-25 12:25:06.183  INFO 16452 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2022-05-25 12:25:06.188  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082: registering service...
+2022-05-25 12:25:06.203  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - registration status: 204
+2022-05-25 12:25:06.307  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : Started EAuctionBuyerApplication in 2.145 seconds (JVM running for 1704.321)
+2022-05-25 12:25:06.313  INFO 16452 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-25 12:25:18.707  INFO 16452 --- [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUCTION-BUYER-MICROSERVICE with eureka with status DOWN
+2022-05-25 12:25:18.708  INFO 16452 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1653461718708, current=DOWN, previous=UP]
+2022-05-25 12:25:18.710  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082: registering service...
+2022-05-25 12:25:18.728  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - registration status: 204
+2022-05-25 12:25:18.800  INFO 16452 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-05-25 12:25:21.811  INFO 16452 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-05-25 12:25:21.828  INFO 16452 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - deregister  status: 200
+2022-05-25 12:25:21.846  INFO 16452 --- [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-05-25 12:25:22.176  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : Starting EAuctionBuyerApplication using Java 11.0.12 on JrJavaFseCogn-6 with PID 16452 (C:\Users\User\Project-workspace\auction-buyer-microservice\target\classes started by User in C:\Users\User\Project-workspace\auction-buyer-microservice)
+2022-05-25 12:25:22.177  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-25 12:25:22.615  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-25 12:25:22.615  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-25 12:25:22.631  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 MongoDB repository interfaces.
+2022-05-25 12:25:22.897  INFO 16452 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=26807931-6611-361d-842c-ec61ca8c5d42
+2022-05-25 12:25:22.991  INFO 16452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-05-25 12:25:22.993  INFO 16452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 12:25:22.994  INFO 16452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-25 12:25:23.024  INFO 16452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 12:25:23.024  INFO 16452 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 844 ms
+2022-05-25 12:25:23.105  INFO 16452 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-25 12:25:23.114  WARN 16452 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-25 12:25:23.123  INFO 16452 --- [cluster-ClusterId{value='628dd2db856e151e7691f3e2', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:55}] to localhost:27017
+2022-05-25 12:25:23.125  INFO 16452 --- [cluster-rtt-ClusterId{value='628dd2db856e151e7691f3e2', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:56}] to localhost:27017
+2022-05-25 12:25:23.126  INFO 16452 --- [cluster-ClusterId{value='628dd2db856e151e7691f3e2', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11375800}
+2022-05-25 12:25:23.128  WARN 16452 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-25 12:25:23.166  WARN 16452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-05-25 12:25:23.255  INFO 16452 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@eefb252, org.springframework.security.web.context.SecurityContextPersistenceFilter@5cd9e399, org.springframework.security.web.header.HeaderWriterFilter@5e0bb425, org.springframework.security.web.authentication.logout.LogoutFilter@61701ba0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b989d09, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2831aec3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b0d52fa, org.springframework.security.web.session.SessionManagementFilter@71a56d1e, org.springframework.security.web.access.ExceptionTranslationFilter@372813d8]
+2022-05-25 12:25:23.675  INFO 16452 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-05-25 12:25:23.705  WARN 16452 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-25 12:25:23.716  INFO 16452 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-05-25 12:25:23.765  INFO 16452 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-05-25 12:25:23.767  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-05-25 12:25:23.768  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-05-25 12:25:23.768  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-05-25 12:25:23.768  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-05-25 12:25:23.769  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-05-25 12:25:23.833  INFO 16452 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:25:23.835  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-05-25 12:25:23.835  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-05-25 12:25:23.835  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-05-25 12:25:23.835  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-05-25 12:25:23.835  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-05-25 12:25:23.835  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-05-25 12:25:23.836  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-05-25 12:25:23.840  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-05-25 12:25:23.841  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-05-25 12:25:23.841  INFO 16452 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-25 12:25:23.842  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1653461723842 with initial instances count: 2
+2022-05-25 12:25:23.843  INFO 16452 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUCTION-BUYER-MICROSERVICE with eureka with status UP
+2022-05-25 12:25:23.844  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1653461723844, current=UP, previous=STARTING]
+2022-05-25 12:25:23.844  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082: registering service...
+2022-05-25 12:25:23.847  INFO 16452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-05-25 12:25:23.847  INFO 16452 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2022-05-25 12:25:23.856  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - registration status: 204
+2022-05-25 12:25:23.962  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : Started EAuctionBuyerApplication in 2.004 seconds (JVM running for 1721.976)
+2022-05-25 12:25:23.970  INFO 16452 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   ManagementWebSecurityAutoConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter,org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' webSecurityConfig; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+      Matched:
+         - found 'session' scope (OnWebApplicationCondition)
+
+   WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+         - found 'session' scope (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2022-05-25 12:25:31.671  INFO 16452 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 12:25:31.671  INFO 16452 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-25 12:25:31.673  INFO 16452 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-25 12:25:31.764  INFO 16452 --- [http-nio-8082-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:57}] to localhost:27017
+2022-05-25 12:25:31.916  INFO 16452 --- [http-nio-8082-exec-2] c.r.a.c.AuctionBuyerController           : Bid added: com.rest.auction.models.Bid@254d6073
+2022-05-25 12:29:13.637  WARN 16452 --- [http-nio-8082-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2022-05-25 12:29:21.396 ERROR 16452 --- [http-nio-8082-exec-6] c.r.a.c.AuctionBuyerController           : Bid details not updated:
+
+com.rest.auction.exception.ResourceNotFoundException: Cant find any product with the given ID-ProductId must be of an existing product available for auction 
+	at com.rest.auction.controllers.AuctionBuyerController.updateBid(AuctionBuyerController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:684) ~[tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.7.jar:2.6.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2022-05-25 12:30:23.846  INFO 16452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:31:29.984  INFO 16452 --- [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUCTION-BUYER-MICROSERVICE with eureka with status DOWN
+2022-05-25 12:31:29.985  INFO 16452 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1653462089985, current=DOWN, previous=UP]
+2022-05-25 12:31:29.986  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082: registering service...
+2022-05-25 12:31:30.002  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - registration status: 204
+2022-05-25 12:31:30.086  INFO 16452 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-05-25 12:31:33.094  INFO 16452 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-05-25 12:31:33.110  INFO 16452 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - deregister  status: 200
+2022-05-25 12:31:33.126  INFO 16452 --- [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-05-25 12:31:33.456  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : Starting EAuctionBuyerApplication using Java 11.0.12 on JrJavaFseCogn-6 with PID 16452 (C:\Users\User\Project-workspace\auction-buyer-microservice\target\classes started by User in C:\Users\User\Project-workspace\auction-buyer-microservice)
+2022-05-25 12:31:33.457  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-25 12:31:33.843  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-25 12:31:33.843  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-25 12:31:33.851  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 MongoDB repository interfaces.
+2022-05-25 12:31:34.070  INFO 16452 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=26807931-6611-361d-842c-ec61ca8c5d42
+2022-05-25 12:31:34.186  INFO 16452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-05-25 12:31:34.186  INFO 16452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 12:31:34.186  INFO 16452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-25 12:31:34.220  INFO 16452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 12:31:34.220  INFO 16452 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 761 ms
+2022-05-25 12:31:34.296  INFO 16452 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-25 12:31:34.306  INFO 16452 --- [cluster-ClusterId{value='628dd44e856e151e7691f3e3', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:58}] to localhost:27017
+2022-05-25 12:31:34.309  INFO 16452 --- [cluster-rtt-ClusterId{value='628dd44e856e151e7691f3e3', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:9, serverValue:59}] to localhost:27017
+2022-05-25 12:31:34.309  INFO 16452 --- [cluster-ClusterId{value='628dd44e856e151e7691f3e3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2015000}
+2022-05-25 12:31:34.310  WARN 16452 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-25 12:31:34.313  WARN 16452 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-25 12:31:34.346  WARN 16452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-05-25 12:31:34.416  INFO 16452 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d5a4c6, org.springframework.security.web.context.SecurityContextPersistenceFilter@786d915a, org.springframework.security.web.header.HeaderWriterFilter@2f3eab8, org.springframework.security.web.authentication.logout.LogoutFilter@46968ba2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14eaad03, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@9d1330c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71cbe63, org.springframework.security.web.session.SessionManagementFilter@afa32a9, org.springframework.security.web.access.ExceptionTranslationFilter@15af289c]
+2022-05-25 12:31:34.910  INFO 16452 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-05-25 12:31:34.937  WARN 16452 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-25 12:31:34.956  INFO 16452 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-05-25 12:31:34.991  INFO 16452 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-05-25 12:31:34.993  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-05-25 12:31:34.995  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-05-25 12:31:34.995  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-05-25 12:31:34.995  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-05-25 12:31:34.995  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-05-25 12:31:35.062  INFO 16452 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:31:35.063  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-05-25 12:31:35.063  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-05-25 12:31:35.063  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-05-25 12:31:35.063  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-05-25 12:31:35.063  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-05-25 12:31:35.063  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-05-25 12:31:35.063  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-05-25 12:31:35.066  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-05-25 12:31:35.067  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-05-25 12:31:35.068  INFO 16452 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-25 12:31:35.068  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1653462095068 with initial instances count: 2
+2022-05-25 12:31:35.070  INFO 16452 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUCTION-BUYER-MICROSERVICE with eureka with status UP
+2022-05-25 12:31:35.070  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1653462095070, current=UP, previous=STARTING]
+2022-05-25 12:31:35.070  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082: registering service...
+2022-05-25 12:31:35.073  INFO 16452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-05-25 12:31:35.074  INFO 16452 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2022-05-25 12:31:35.091  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - registration status: 204
+2022-05-25 12:31:35.215  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : Started EAuctionBuyerApplication in 1.944 seconds (JVM running for 2093.229)
+2022-05-25 12:31:35.223  INFO 16452 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-25 12:31:50.405  INFO 16452 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 12:31:50.406  INFO 16452 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-25 12:31:50.408  INFO 16452 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-25 12:31:50.417  INFO 16452 --- [http-nio-8082-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:10, serverValue:60}] to localhost:27017
+2022-05-25 12:31:50.424 ERROR 16452 --- [http-nio-8082-exec-2] c.r.a.c.AuctionBuyerController           : Bid details not updated:
+
+com.rest.auction.exception.ResourceNotFoundException: Cant find any product with the given ID-ProductId must be of an existing product available for auction 
+	at com.rest.auction.controllers.AuctionBuyerController.updateBid(AuctionBuyerController.java:65) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:684) ~[tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.6.3.jar:5.6.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.7.jar:2.6.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2022-05-25 12:32:51.165  INFO 16452 --- [Thread-19] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUCTION-BUYER-MICROSERVICE with eureka with status DOWN
+2022-05-25 12:32:51.166  INFO 16452 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1653462171166, current=DOWN, previous=UP]
+2022-05-25 12:32:51.168  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082: registering service...
+2022-05-25 12:32:51.176  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - registration status: 204
+2022-05-25 12:32:51.256  INFO 16452 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-05-25 12:32:54.271  INFO 16452 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-05-25 12:32:54.288  INFO 16452 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - deregister  status: 200
+2022-05-25 12:32:54.303  INFO 16452 --- [Thread-19] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-05-25 12:32:54.663  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : Starting EAuctionBuyerApplication using Java 11.0.12 on JrJavaFseCogn-6 with PID 16452 (C:\Users\User\Project-workspace\auction-buyer-microservice\target\classes started by User in C:\Users\User\Project-workspace\auction-buyer-microservice)
+2022-05-25 12:32:54.663  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-05-25 12:32:55.101  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-25 12:32:55.102  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-25 12:32:55.112  INFO 16452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 MongoDB repository interfaces.
+2022-05-25 12:32:55.349  INFO 16452 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=26807931-6611-361d-842c-ec61ca8c5d42
+2022-05-25 12:32:55.466  INFO 16452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-05-25 12:32:55.467  INFO 16452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-25 12:32:55.468  INFO 16452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-25 12:32:55.499  INFO 16452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-25 12:32:55.499  INFO 16452 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 834 ms
+2022-05-25 12:32:55.569  INFO 16452 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-05-25 12:32:55.575  WARN 16452 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-25 12:32:55.579  INFO 16452 --- [cluster-ClusterId{value='628dd49f856e151e7691f3e4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:11, serverValue:61}] to localhost:27017
+2022-05-25 12:32:55.581  INFO 16452 --- [cluster-ClusterId{value='628dd49f856e151e7691f3e4', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5299700}
+2022-05-25 12:32:55.581  INFO 16452 --- [cluster-rtt-ClusterId{value='628dd49f856e151e7691f3e4', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:12, serverValue:62}] to localhost:27017
+2022-05-25 12:32:55.583  WARN 16452 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-25 12:32:55.613  WARN 16452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-05-25 12:32:55.694  INFO 16452 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4682bbbd, org.springframework.security.web.context.SecurityContextPersistenceFilter@8b20438, org.springframework.security.web.header.HeaderWriterFilter@1ef17593, org.springframework.security.web.authentication.logout.LogoutFilter@16220e32, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31cc379c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@248491db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4608f0ff, org.springframework.security.web.session.SessionManagementFilter@32d31a9a, org.springframework.security.web.access.ExceptionTranslationFilter@77a9ddd7]
+2022-05-25 12:32:56.167  INFO 16452 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-05-25 12:32:56.195  WARN 16452 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-05-25 12:32:56.205  INFO 16452 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-05-25 12:32:56.229  INFO 16452 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-05-25 12:32:56.231  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-05-25 12:32:56.233  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-05-25 12:32:56.233  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-05-25 12:32:56.233  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-05-25 12:32:56.233  INFO 16452 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-05-25 12:32:56.284  INFO 16452 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:32:56.285  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-05-25 12:32:56.285  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-05-25 12:32:56.285  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-05-25 12:32:56.285  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-05-25 12:32:56.285  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-05-25 12:32:56.285  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-05-25 12:32:56.285  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-05-25 12:32:56.289  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-05-25 12:32:56.290  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-05-25 12:32:56.290  INFO 16452 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-05-25 12:32:56.291  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1653462176291 with initial instances count: 2
+2022-05-25 12:32:56.293  INFO 16452 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUCTION-BUYER-MICROSERVICE with eureka with status UP
+2022-05-25 12:32:56.293  INFO 16452 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1653462176293, current=UP, previous=STARTING]
+2022-05-25 12:32:56.295  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082: registering service...
+2022-05-25 12:32:56.298  INFO 16452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-05-25 12:32:56.299  INFO 16452 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2022-05-25 12:32:56.313  INFO 16452 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUCTION-BUYER-MICROSERVICE/host.docker.internal:auction-buyer-microservice:8082 - registration status: 204
+2022-05-25 12:32:56.413  INFO 16452 --- [restartedMain] c.r.a.mainapp.EAuctionBuyerApplication   : Started EAuctionBuyerApplication in 1.933 seconds (JVM running for 2174.427)
+2022-05-25 12:32:56.418  INFO 16452 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-25 12:33:28.354  INFO 16452 --- [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-25 12:33:28.354  INFO 16452 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-25 12:33:28.355  INFO 16452 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-25 12:33:28.362  INFO 16452 --- [http-nio-8082-exec-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:13, serverValue:63}] to localhost:27017
+2022-05-25 12:33:28.384  INFO 16452 --- [http-nio-8082-exec-3] c.r.a.c.AuctionBuyerController           : Bid details updated: com.rest.auction.models.Bid@1d4c1271
+2022-05-25 12:37:56.290  INFO 16452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-05-25 12:42:56.295  INFO 16452 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
